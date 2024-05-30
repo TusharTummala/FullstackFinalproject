@@ -1,0 +1,29 @@
+.logo-container {
+    margin-right: 20px; 
+  }
+  
+  .logo-img {
+    width: 150px; 
+    height: auto;
+    border-radius: 10px; 
+  }
+  
+  .navbar {
+    background-color: #33383c;; 
+    color: #ffffff; 
+  }
+  
+  .navbar-nav .nav-link {
+    color: #F4F1DE; 
+  }
+  
+  .navbar-nav .btn {
+    border-color: #E07A5F; 
+    color: #F4F1DE; 
+  }
+  
+  .navbar-nav .btn:hover {
+    background-color: #E07A5F; 
+    color: #fbf9f6; 
+  }
+  

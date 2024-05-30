@@ -34,8 +34,7 @@ else{
 }
 }))
 
-//npm install express-async-handler
-//user login
+
 // User login
 authorapp.post('/login', expressAsyncHandler(async (req, res) => {
     const userCred = req.body;

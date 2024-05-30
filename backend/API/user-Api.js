@@ -5,7 +5,7 @@ const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const expressAsyncHandler=require('express-async-handler')
 const verifyToken = require('../middleware/verifyToken')
-//get user collection app
+
 require('dotenv').config()
 userapp.use(exp.json());
 let usercollection;
@@ -16,9 +16,7 @@ userapp.use((req,res,next)=>{
     next()
 })
 
-// userapp.get('/test-user',(req,res)=>{
-//     res.send({message:'this is from user api'})
-// })
+
 //user registration route
 userapp.post('/register',expressAsyncHandler(async(req,res)=>{
     console.log(req.body)
@@ -38,7 +36,7 @@ else{
 }
 }))
 
-//npm install express-async-handler
+
 //user login
 userapp.post('/login',expressAsyncHandler(async(req,res)=>{
     //get cred obj from client
@@ -58,7 +56,7 @@ userapp.post('/login',expressAsyncHandler(async(req,res)=>{
     //jwt token
 }))
 
-//get aricles of all users
+//get articles of all users
 userapp.get('/articles',verifyToken,expressAsyncHandler(async(req,res)=>{
     let articles=await articlescollection.find({status:true}).toArray()
     res.send({message:'articles',payload:articles})

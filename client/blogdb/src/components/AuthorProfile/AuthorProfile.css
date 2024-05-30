@@ -3,4 +3,24 @@
     font-weight: bold;
 
   }
+  .author-profile {
+    background-color: #f4f1de; 
+  }
+  
+  .nav-link {
+    color: #e07a5f; 
+    transition: color 0.3s; 
+  }
+  
+  .nav-link.active {
+    color: #e07a5f; 
+  }
+  
+  .nav-link:hover {
+    color: #aa6c63; 
+  }
+  
+  .nav {
+    background-color: #81b29a; 
+  }
   

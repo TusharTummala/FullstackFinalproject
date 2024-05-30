@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f1de; 
+  color: #333; 
+}
+
+/* Button Styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #e07a5f; 
+  color: #f4f1de; 
+}
+
+/* Icon Styles */
+.icon {
+  vertical-align: middle;
+}
+
+/* Form Styles */
+.form-label {
+  font-weight: bold;
+}
+
+.form-control,
+.form-select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Article Container Styles */
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Comments Section Styles */
+.comments-section {
+  margin-top: 20px;
+}
+
+.comment-heading {
+  margin-bottom: 10px;
+}
+
+.comment {
+  background-color: #f4f1de; 
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #333; 
+}
+
+.username {
+  color: #3d405b; 
+}
+
+.comment-text {
+  color: #81b29a; 
+}
+
+/* Success and Error Message Styles */
+.success-message {
+  color: #3d405b; 
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #e07a5f; 
+  margin-top: 10px;
+}
+
+/* Other Styles */
+.display-3 {
+  font-size: 2rem;
+}
+
+/* Card Styles */
+.card {
+  background-color: #f4f1de; 
+  color: #333;
+  border: none;
+}
+
+.card-body {
+  background-color: #f4f1de;
+}
+
+.card-title {
+  color: #3d405b; 
+}
+
+.card-text {
+  color: #81b29a; 
+}
+
+.card-footer {
+  color: #3d405b; 
+}
+
+
+.btn:hover {
+  background-color: #d93a3a; 
+}
+
+/* Card Shadow */
+.shadow {
+  box-shadow: rgba(253, 232, 232, 0.35) 0px 5px 10px;
+}

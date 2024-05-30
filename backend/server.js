@@ -8,7 +8,7 @@ const path=require('path')
 app.use(exp.static(path.join(__dirname,'../client/blogdb/build')))
 //join fe and be
 //connect to mongodb server
-mc.connect('mongodb+srv://aashritharaj26:hLI3F2ttXgwSnCnA@cluster0.po3bzyh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mc.connect('mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.6')
 //mc.connect(process.env.DB_URL)
 .then(client=>{
 const blogdb=client.db('blogdb')
@@ -44,3 +44,4 @@ app.use((err,req,res,next)=>{
 })
 const port=process.env.PORT || 5000;
 app.listen(4000,()=>console.log(`web server in port ${port}`))
+

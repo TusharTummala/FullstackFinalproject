@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 function Errorroute() {
   return (
-    <div>
-        <h1 className='display-3 text-danger'>This page does not exist</h1>
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1 style={{ fontSize: '48px', color: '#dc3545' }}>This page does not exist</h1>
     </div>
-  )
+  );
 }
 
-export default Errorroute
+export default Errorroute;

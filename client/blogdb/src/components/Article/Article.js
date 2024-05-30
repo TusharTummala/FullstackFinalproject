@@ -14,7 +14,7 @@ import { FcPortraitMode } from "react-icons/fc";
 import { BiCommentAdd } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { MdRestore } from "react-icons/md";
-import './Article.css'
+import './Article.css';
 import { HiArrowCircleLeft } from "react-icons/hi";
 function Article() {
   const { state } = useLocation();
@@ -234,6 +234,9 @@ console.log(state)
                <option value="programming">Programming</option>
                <option value="AI&ML">AI&ML</option>
                <option value="database">Database</option>
+               <option value="Maths">Math</option>
+               <option value="Physics">Physics</option>
+               <option value="Chemistry">Chemistry</option>
              </select>
            </div>
            <div className="mb-4">
@@ -264,3 +267,5 @@ console.log(state)
 }
 
 export default Article;
+
+

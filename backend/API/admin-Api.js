@@ -1,10 +1,10 @@
 const exp=require('express')
 const adminapp=exp.Router()
-//const commonapp=require('./common-Api')
+
 const bcrypt=require('bcryptjs')
 const jwt=require('jsonwebtoken')
 const expressAsyncHandler=require('express-async-handler')
-//get user collection app
+
 require('dotenv').config()
 adminapp.use(exp.json());
 adminapp.use((req,res,next)=>{
@@ -30,7 +30,7 @@ else{
 }
 }))
 
-//npm install express-async-handler
+
 //user login
 adminapp.post('/login',expressAsyncHandler(async(req,res)=>{
     //get cred obj from client
@@ -54,7 +54,7 @@ adminapp.post('/login',expressAsyncHandler(async(req,res)=>{
     //jwt token
 }))
 
-//get aricles of all users
+//get articles of all users
 adminapp.get('/articles',expressAsyncHandler(async(req,res)=>{
     const articlescollection=req.app.get('articlescollection')
     let articles=await articlescollection.find().toArray()
